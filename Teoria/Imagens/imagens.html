@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IMAGENS ESTILIZADAS</title>
+
+    <style>
+        img {
+            width: 300px;
+        }
+
+        #img1 {
+            border-radius: 10px;
+        }
+
+        #img2 {
+            border-radius: 50px;
+        }
+
+        #img3 {
+            border-radius: 150px;
+        }
+
+        #img5 {
+           width: 300px;
+           border: 1px solid #ddd;
+           border-radius: 4px;
+           padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        IMAGENS ESTILIZADAS
+        Este ponto da unidade dedica-se a alguns estilos que podem ser aplicados em imagens.
+        
+        IMAGENS ARREDONDADAS
+        Através da propriedade border-radius é possível criar imagens arredondadas.
+        Basta para isso atribuir um valor em unidade reconhecida por HTML/CSS à propriedade.
+        O documento irá gerar uma borda ao elemento com os cantos arredondados, com as características definidas.
+    -->
+
+    <h1>Estilização de imagens - A propriedade border-radius</h1>
+
+    <h2>Abaixo pode ver-se a mesma imagem com valores de border-radius
+    diferentes. Quanto maior o valor deste atributo mais arredondados
+    serão os seus cantos.</h2>
+
+    <img src="darth_vader.jpeg" alt="Darth Vader">
+    <img id="img1" src="darth_vader.jpeg" alt="Darth Vader">
+    <img id="img2" src="darth_vader.jpeg" alt="Darth Vader">
+    <img id="img3" src="darth_vader.jpeg" alt="Darth Vader">
+
+    <hr>
+
+    <!-- 
+        IMAGENS THUMBNAIL
+        É muito comum o uso de imagens thumbnail (miniaturas) em web design. É possível criar este tipo de imagem recorrendo à propriedade border.
+     -->
+
+     <h1>Estilização de imagens - Thumbnail </h1>
+     
+     <h2>Abaixo pode ver-se uma imagem tipo thumbnail. Para tal, foi usada a propriedade border.</h2>
+     
+     <img id="img5" src="darth_vader.jpeg" alt="Darth Vader">
+</body>
+</html>

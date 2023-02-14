@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O ATRIBUTO FLOAT</title>
+
+    <style>
+        img {
+            float: right;
+            /*float: left;*/
+            /*float: none;*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+    O atributo float (flutuar) especifica como o elemento ao qual se atribui esta propriedade vai flutuar na página. É usado em elementos aos quais se atribui um posicionamento relative, e pode assumir quatro valores distintos:
+     left: o elemento flutua à esquerda do ecrã.
+     right: o elemento flutua à direita do ecrã.
+     none: o elemento não flutua e será exibido onde ocorre no texto. Este é o valor padrão.
+     inherit: o elemento herda o valor flutuante do seu ancestral.
+    No ponto anterior, foi explicado que a posição relative vai colocar o elemento no espaço disponível seguinte do fluxo do documento, e dependendo do seu container.
+    Ao adicionar a propriedade float, pode escolher-se se este elemento fica alinhado à esquerda ou à direita (ficando sempre situado no espaço livre seguinte do fluxo do documento).
+    Obs.: O atributo float não funciona nas posições absolute e fixed, já que estas ocupam as posições top, right, bottom e left, e nunca seguem o fluxo do documento.
+    -->
+    <h1>O ATRIBUTO FLOAT</h1>
+
+    <p><strong>Neste exemplo, a imagem irá flutuar (float) à direita (right) do parágrafo que irá envolver a imagem.</strong></p>
+        <p><img src="../../Teoria/logo_masterd_.png" alt="Logo MasterD" style="width: 200px; height: auto; margin-left: 15px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+            scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+            ultrices nec congue eget, auctor vitae massa. Fusce luctus
+            vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
+            ornare eu, lobortis in odio. Praesent convallis urna a lacus
+            interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+            ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+            venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+            pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam
+            velit.
+        </p>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Quanto à estilização, e não entrando em pormenor no que toca aos estilos de
+letra, cores, etc., temos de definir as classes col-. Tendo em conta que uma col-
+12 ocupará 100% da largura do layout, a mesma deve ser definida com
+width:100%. Uma col-6, ocupará uma width de 50%. Uma col-1, ocupará uma
+largura de 100%/12, ou seja, 8.33%, e assim sucessivamente.
+É necessário, portanto, incluir na secção <style> as seguintes propriedades: 
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+ Neste caso só irão ser usadas as col-3 e col-9, já que caso não se defina, o
+documento assume que a div ocupa 100% da largura.
+Para que todas estas classes “col-“ flutuem ao lado umas das outras, deverá
+aplicar a propriedade float:left a todas elas, o que se faz da seguinte forma:/
+
+[class*= "col-"] {
+    float: left;
+}
+
+Os restantes estilos serão os já usados nos pontos anteriores, sendo que
+apenas terá de ter em atenção o nome das divs e classes. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    background-color: #26354a;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: #b4aeb2;
+}
+
+nav {
+    background-color: #ae3f41;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+article {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #5a5c5b;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+[class*= "col-"] {
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

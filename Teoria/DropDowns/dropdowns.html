@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="navigation bars">
+    <meta name="author" content="João Roberto">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>DROPDOWNS</title>
+
+</head>
+
+<body>
+    <!-- 
+       Elementos dropdown (ou suspensos) são elementos semelhantes a listas que permitem que os utilizadores escolham um valor de uma lista de opções que “caiem para baixo”. Se está inativo, o elemento esconde as opções do elemento e se está ativo mostra a sua lista de opções.
+       Pode ser aplicado a vários tipos de elementos, tais como, imagens, texto, menus, etc.
+       Os dropdowns são muito usados na criação de menus de websites, quando se pretende que uma página tenha várias páginas “child” (ou subpáginas).
+       
+       DROPDOWN BÁSICO
+       O exemplo abaixo mostra como criar uma caixa dropdown, aquando da passagem do rato por um elemento, neste caso, um parágrafo – “Hoverable dropdown”.
+
+    -->
+
+    <h1><i>DROPDOWN BÁSICO</i></h1>
+
+    <div class="dropdown">
+        <span>Passe o mouse por cima de mim...</span>
+        <div class="dropdown-content">
+            <p>Olá Mundo!</p>
+        </div>
+    </div>
+
+    <br><hr>
+
+    <!-- 
+        MENUS “DROPDOWN”
+        No exemplo que se segue iremos criar um menu dropdown, que permite ao utilizador escolher uma das opções da lista inserida no dropdown.
+        Neste exemplo pretende-se explanar como proceder para fazer um menu dropdown. Trata-se de uma página web com um botão “As minhas páginas” que contém um menu dropdown com uma lista de quatro links que direcionam para as páginas da Master D, Google, W3Schools e W3C.
+        Há que definir uma div onde virá todo o conteúdo do botão e menu dropdown.
+        Neste exemplo, chamou-se a essa div dropdown, tendo-a definido com um seletor classe. Dentro da .dropdown virá, então o botão, de classe .dropbtn, e uma div de classe .dropdown-content, na qual estão contidos os quatro links para as páginas acima indicadas: Master D, Google, W3Schools e W3C.
+        De seguida, irá passar-se para a estilização das divs.
+        Assim a div .dropdown deverá ter uma posição relativa e um display inline-block, para que se posicione corretamente fluxo da página web.
+        Neste exemplo optou-se por definir o botão vermelho, com letras brancas e padding de 16 px. Também o tamanho de letra foi definido com 16 px e não foi atribuída qualquer borda ao botão.
+        Esta será a visualização do botão sem o mouse sobre si:
+        No que se refere ao conteúdo do botão, ou seja, a div em que estão inseridos os quatro links para as páginas indicadas, ou seja, a div de classe dropdowncontent, terá de se definir um display:none, para que o seu conteúdo apareça apenas quando se passar o rato sobre o botão. A sua position deve ser definida como absolute. A background-color foi definida como sendo #f9f9f9.
+        Quanto aos links, os elementos da dropdown-content, estão definidos com fonte de cor preta, retirou-se o sublinhado default dos links, através da atribuição da propriedade text-decoration:none, aplicou-se um padding top e bottom de 12px e left e right de16 px. Quanto ao valor do display, e para que surjam uns por baixo dos outros, terá de assumir o valor block.
+        Ainda em relação aos links, e quando se passa o rato sobre os mesmos, repare que os mesmos ficam com um tom de cinza mais escuro. Tal é conseguido através da atribuição da propriedade background-color: #f1f1f1, ao elemento .dropdown-content a:hover.
+        As classes .dropdown:hover e .dropdown-content, deverão ainda receber a propriedade display:block.
+        Por fim, e para que a div .dropdown mude a sua configuração aquando da passagem do rato, devemos definir a sua background-color como amarela e a cor da letra preta.
+        O resultado final será então o apresentado nas imagens abaixo.
+     -->
+
+    <h1>MENU <i>DROPDOWN</i></h1>
+
+    <p>Se passar o mouse sobre o botão abaixo, aparecerá um menu <i>dropdown</i>.</p><br>
+
+    <div class="suspenso">
+        <butt class="suspensobtn">As minhas páginas</butt>
+        <div class="suspenso-conteudo">
+            <a href="http://www.materd.pt/">Master D</a>
+            <a href="http://www.google.com/">Google</a>
+            <a href="http://www.w3school.com/">W3School</a>
+            <a href="http://www.w3.org/">W3C</a>
+        </div>
+    </div>
+
+    <br><br><br><hr>
+
+    <!-- 
+        GALERIAS DE IMAGENS
+        Para criar galerias de imagens, pode recorrer ao CSS.
+        Iremos criar uma galeria de imagens, em que cada uma delas tem uma descrição.
+        Visualização da galeria de imagens do exemplo.
+        Neste exemplo iremos criar uma página web com uma galeria de imagens com descrição, como se apresenta na figura acima.
+        O primeiro passo é definir a própria galeria de imagens. Neste caso a mesma é composta por quatro imagens com logos da Master.D, da Google, da W3Schools e da W3C. Definiu-se a galeria com classe “minha-galeria”, e ao clicar em cada imagem (link), será direcionado para cada uma das imagens, sendo que as mesmas abrem numa nova tab. Dentro de cada galeria há um elemento child, de classe “desc”, correspondente à descrição de cada uma das imagens.
+        Estando o HTML criado, o próximo passo será definir as folhas de estilo, que neste caso são do tipo internal.
+        Neste caso, defini-se uma margem entre imagens de 5 px, em que cada uma delas tem uma borda com as características definidas (1px solid #ccc). 
+        Para que as imagens se posicionem umas ao lado das outras, é necessário atribuir um float:left.
+        Ao passar o rato sobre a galeria, pretende-se que a mesma mude a cor da borda para a cor #777. Tem, por isso, de se atribuir a propriedade “border: 1px solid #777;” ao elemento div .minha-galeria:hover.
+        Como se pretende que as imagens tenham a sua dimensão original definiu-se a sua largura a 100%. A altura será automaticamente calculada através da sua definição com o valor auto.
+        Finalmente, a div .desc (descrição) foi definida com o texto alinhado ao centro e com um padding de 15px.
+        Consegue assim o resultado pretendido e mostrado na imagem. De notar que ao passar o rato sobre as imagens, a cor da sua borda mudará.
+
+     -->
+      
+     <h1>GALERIAS DE IMAGENS</h1>
+
+     <div class="minha_galeria">
+        <a target="_blank" href="logomasterd.png"></a>
+        <img src="Imagens/logo_masterd.png" alt="Master D">
+     </div>
+
+     <div class="minha_galeria">
+        <a target="_blank" href="logo_google.pt.png"></a>
+        <img src="Imagens/logo_google.png" alt="Google">
+     </div>
+
+     <div class="minha_galeria">
+        <a target="_blank" href="logo_w3school.png"></a>
+        <img src="Imagens/logo_w3school.png" alt="W3School">
+     </div>
+
+     <div class="minha_galeria">
+        <a target="_blank" href="logo_w3c.png"></a>
+        <img src="Imagens/logo_w3c.png" alt="W3C">
+     </div>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(237, 237, 237);
+}
+h1 {
+    text-align: center;
+    background-color: #d7d7d7;
+    padding: 20px;
+}
+
+h1::after, h1::before {    
+    color: blue;
+    content: '_________';
+}
+
+
+.meu_titulo {
+    color: #e8b05d;
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+}
+
+#paragrafo {
+    background-color: "d7d7d7";
+}
+
+#footer {
+    text-align: right;
+}

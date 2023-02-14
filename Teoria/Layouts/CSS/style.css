@@ -1,0 +1,95 @@
+/* 
+A propriedade box-sizing define como a largura e altura dos elementos são calculadas,
+E se incluem ou não o preenchimento das bordas.
+Neste caso definimos a box-sizing com o atributo border-box,
+O que irá resultar na inclusão do padding e border nas altura e largura do elemento.
+De relembrar que o seletor * seleciona todos os elementos do documento.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* 
+Para que sejam criadas duas colunas uma ao lado da outra (os elementos nav e article inseridos na section),
+Temos de lhes atribuir a propriedade float:left.
+ */
+/* ESTILIZAR O HEADER */
+nav {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background: #ae3f41;
+    padding: 20px;
+}
+
+
+article {
+    float: left;
+    padding: 20px;
+    width: 75%;
+    background-color: #ffffff;
+    height: 200px;
+}
+
+/* 
+Para garantirmos que nada flutua ao lado das duas colunas da <section>,
+Teremos de atribuir um pseudo-selector :after à <section>,
+Que garanta que nada flutue após esta secção. Assim:
+*/
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+Neste caso, incluímos ainda uma nova propriedade que vai fazer com que as colunas apareçam uma por cima da outra em screens mais pequenos,
+Tornando, assim, o layout responsivo.
+Isto acontece com a introdução da propriedade @media (max-widht: 600px). Mais à frente neste módulo,
+Iremos abordar este assunto com maior profundidade.
+*/
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*
+Esta estilização faz com que, para screens até 600px (e apenas nesta condição),
+As duas colunas (nav e article) ocupem 100% da largura do screen,
+Sendo a sua altura calculada automaticamente.
+Retirámos assim a condição de flutuarem uma ao lado da outra.
+*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTILIZAR O HEADER */
+header {
+    background-color: #26354a;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: #b4aeb2;
+}
+
+/* CRIAR DUAS COLUNAS/CAIXAS QUE FLUTUAM UMA AO LADO DA OUTRA */
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+/* APAGAR INFORMAÇÃO APÓS A COLUNA */
+footer {
+    background-color: #5a5c5b;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+

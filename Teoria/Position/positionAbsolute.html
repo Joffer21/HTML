@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Position Absolute</title>
+
+    <style>
+    div.relative {
+        position: relative;
+        width: 600px;
+        height: 300px;
+        background-color: #73AD21;
+    }
+
+    div.absolute {
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        width: 200px;
+        height: 100px;
+        background-color: #d6cdcd;
+    }
+
+    </style>
+
+</head>
+<body>
+    <!-- 
+    ABSOLUTE
+    Quando se atribui o valor absolute (absoluto) a um elemento, o mesmo vai ser
+    posicionado de acordo com os valores definidos para top, right, left e bottom,
+    em relação à posição do seu elemento ancestral mais próximo, ao contrário do
+    que acontece com o valor fixed, que é relativo à viewport. Assim, consegue-se
+    posicionar um elemento onde se pretender, sem que este mude de posição.
+    Contudo, se um elemento posicionado com valor absolute não tiver ancestrais
+    posicionados, o mesmo vai ser relativo ao documento (body) e mover-se-á
+    acompanhando o scrolling da página.
+     -->
+
+    <h1>Position Absolute</h1>
+    <div class="relative">Este elemento tem atributo <i>relative</i> e está posicionado em relação à sua posição normal
+    </div>
+    
+    <div class="absolute">Este elemento tem atributo <i>absolute</i> e
+    está posicionado em relação ao seu ancestral (a div.relative)</div>
+    </div>
+    
+</body>
+</html>

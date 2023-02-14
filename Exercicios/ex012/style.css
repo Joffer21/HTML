@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+.coluna-meio, .coluna-lado {
+    float: left;
+    padding: 10px;
+    height: 300px; /* valor atribuído apenas para demonstração. */
+}
+
+.coluna-lado {
+    width: 25%;
+    background-color: #B9D532;
+}
+
+/* Coluna do meio*/
+.coluna-meio {
+    width: 50%;
+    background-color: #FFFBC7;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .coluna-lado, .column-meio {
+      width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilização do header */
+.header {
+    background-color: #759796;
+    color:#FFFBC7;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Criar 3 colunas ao lado uma das outras */
+.coluna-meio, .coluna-lado {
+    float: left;
+    padding: 10px;
+    height: 300px; /* valor atribuído apenas para demonstração. */
+}
+
+/* colunas do lado esquerdo e direito */
+.coluna-lado {
+    width: 25%;
+    background-color: #B9D532;
+}
+
+/* Coluna do meio*/
+.coluna-meio {
+    width: 50%;
+    background-color: #FFFBC7;
+}
+
+/* para limpar o float após as colunas */
+.row:after {
+    content: "";
+    display: table;
+  clear: both;
+}
+
+/* estilização do footer */
+.footer {
+  background-color: #292D73;
+  color:#fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .coluna-lado, .column-meio {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #3A64AE;
+}
+
+li {
+  display: inline;
+}
+
+li a{
+    padding:10px 20px;
+    text-decoration: none;
+    color: white;
+    text-decoration:none;
+}
+
+a:hover{
+    background-color: #FFCC03;
+}
+
+.active{
+    font-size: 24px;
+    font-weight:bold;
+}
+
+#float-right{
+    float: right;
+}

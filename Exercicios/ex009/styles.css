@@ -1,0 +1,22 @@
+
+#img_porto {
+    position: relative;
+}
+
+#img_lisboa {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#img2 {
+    position: relative;
+    z-index: 2;
+}
+
+#img3 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: -1;
+}

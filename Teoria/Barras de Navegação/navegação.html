@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="navigation bars">
+    <meta name="author" content="João Roberto">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            background-color: #7a6d62;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding: 15px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #ad9c8e;
+        }
+
+        .active {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #edd1b9;
+        }
+
+        #float-right {
+            float: right;
+        }
+    </style>
+
+<script src="https://kit.fontawesome.com/35a157434b.js" crossorigin="anonymous"></script>
+
+    <title>BARRAS DE NAVEGAÇÃO</title>
+
+</head>
+
+<body>
+    <!-- 
+        BARRAS DE NAVEGAÇÃO
+        As barras de navegação (ou navigation bar) são uma forma fácil de transformar listas de links HTML em menus com um aspeto visual atrativo. Tal pode ser feito através de CSS.
+        Por exemplo, os menus dos websites podem ser feitos através das barras de navegação.
+        Há várias propriedades CSS a ter em conta quando se pretende transformar uma simples lista HTML, numa barra de navegação estilizada.
+        O primeiro passo será criar a uma lista simples em HTML, recorrendo às tags <ul> e <li>. Trata-se portanto de uma lista não ordenada, em que os itens são Master D, Google, W3Schools e W3C, que contêm links para as respetivas páginas url.
+        ALINHAMENTO DE ELEMENTOS ISOLADOS EM BARRAS DE NAVEGAÇÃO
+        Outra das possibilidades conseguidas com CSS, em barras de navegação, é a hipótese de alinhar elementos isolados no menu. É comum ver-se, por exemplo, a barra de pesquisa (search), alinhada à direita, isolada dos restantes elementos do menu.
+
+     -->
+
+     <h1>Barras de navegação</h1>
+
+     <ul>
+        <li><a class="active" href="un13-navbar-ex2.html">Home</a></li>
+        <li><a href= "https://www.masterd.pt/)">Master D</a></li>
+        <li><a href="https://www.google.pt/">Google</a></li>
+        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        <li><a href="https://www.w3.org/">W3C</a></li>
+        <li id="float-right"><a href="#"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i><li>
+    </ul>
+</body>
+</html>

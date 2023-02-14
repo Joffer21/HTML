@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Position Fixed</title>
+
+    <style>
+        div.fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: auto;
+            background-color: #fc0339;
+            border: 1px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 
+    FIXED
+    O valor de posicionamento fixed (fixo) faz com que o elemento seja posicionado
+    em relação à viewport (janela do navegador). Esta propriedade permite que o
+    elemento permaneça sempre no mesmo ponto da viewport, mesmo ao fazer o
+    scroll da página. Os valores das propriedades top, right, bottom e left são os
+    que ditam o posicionamento do elemento.
+     -->
+
+    <h1>Position Fixed</h1>
+    <div class="fixed">
+        Este elemento tem position:fixed e como tal permanecerá sempre no
+        mesmo local da viewport, mesmo quando se faz scroll ou se altera o
+        zoom. Neste caso irá sempre posicionar‐se no canto inferior
+        direito da viewport, já que as propriedades bottom e right têm
+        valor 0.
+    </div>
+    
+</body>
+</html>

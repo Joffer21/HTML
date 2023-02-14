@@ -1,0 +1,18 @@
+#caixa1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff0000;
+}
+
+#caixa2 {
+    width: 50%;
+    height: 45%;
+    padding: 20px;
+    border: 2px solid black;
+    color: #fff;
+    background-color:#ff0000;
+}

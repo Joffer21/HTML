@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="navigation bars">  
+    <meta name="author" content="João Roberto">
+
+    <link rel="stylesheet" href="CSS/grid.css">
+
+    <title>CSS GRID</title>
+
+</head>
+
+<body>
+
+    <!-- 
+        CSS GRID
+        O módulo CSS Grid Layout é um sistema baseado em linhas e colunas, que distribui o conteúdo entre as mesmas utilizando classes, aplicando-lhes larguras segundo as necessidades. O CSS Grid baseia-se num layout que contém 12 colunas.
+        Neste caso o header e o footer vão ocupar as 12 colunas do layout, o nav irá ocupar 3 das 12 colunas e o article ocupará as restantes 9 colunas.
+        Assim, em vez de definir as várias secções como temos estado a fazer até ao momento, iremos criar divs.
+
+     -->
+
+     <!-- Uma div de classe header onde estará o conteúdo do cabeçalho -->
+
+    <div class="header">
+        <img id="darth_vader_pic" src="darth_vader.jpeg" alt="Darth Vader" width='300'>
+        <h2>Darth Vader Website</h2>
+        <p>I am your father...</p>
+    </div>
+
+
+    <!-- Uma div de classe row onde estará o conteúdo do nav e do article.
+    Sendo que o nav ocupa três colunas estará contido numa div de classe
+    col-3 e, seguindo o mesmo raciocínio, o article estará contido numa div
+    de classe col-9: -->
+
+    <div class="row">
+        <div class="col-3">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <article>
+            <h1>Hello world!</h1>
+            <p>Welcome to the dark side!</p>
+        </article>
+    </div>
+
+    <!-- Por último definimos uma div de classe footer,
+    onde estará o conteúdo do cabeçalho: -->
+
+    <div class="footer">
+        <p>Contact me</p>
+    </div>
+
+
+    
+    
+</body>
+
+</html>

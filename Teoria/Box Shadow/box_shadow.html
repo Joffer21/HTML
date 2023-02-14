@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A PROPRIEDADE BOX-SHADOW</title>
+
+    <style>
+        #example1 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px;
+            width: 50%;
+        }
+
+        #example2 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px #a5e5fa;
+            width: 50%;
+        }
+
+        #example3 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 5px #a5e5fa;
+            width: 50%;
+        }
+
+        #example4 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 5px 10px #a5e5fa;
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 
+       A propriedade box-shadow (sombra de caixa), gera uma sombra à volta da caixa à qual se atribui a mesma.
+       Esta propriedade pode assumir diversos valores, entre eles: 
+       box‐shadow: none| h‐offset v‐offset blur spread color |inset | initial | inherit;
+       Abaixo explicam-se os valores mais usados para esta propriedade:
+        none: não será exibida qualquer sombra.
+        h-offset v-offset blur spread:
+        h-offset é deslocamento horizontal da sombra, em que um valor positivo coloca a sombra no lado direito da caixa, e um valor negativo coloca a sombra no lado esquerdo da caixa. 
+        v-offset é deslocamento vertical da sombra, em que um valor positivo coloca a sombra por baixo da caixa, e um valor negativo coloca a sombra por cima da caixa.
+        blur (valor opcional) é o raio do blur da sombra em que, quanto maior o seu valor, mais efeito de blur será aplicado.
+        spread (valor opcional) é o raio de propagação da sombra e valores positivos aumentam o tamanho da sombra, enquanto valores negativos, diminuem o tamanho da sombra.
+        color (valor opcional) corresponde à cor da sombra e caso não se defina, a cor por defeito será a mesma da cor do texto.
+       Para atribuir múltiplas sombras a um elemento, deve ser adicionada uma lista de sombras separadas por vírgulas.
+    -->
+
+    <h1>A propriedade box-shadow</h1>
+
+    <h2>box-shadow simples</h2>
+    <div id="example1">
+            <p>Esta div tem deslocamento horizontal de 5 px e deslocamento vertical de 10 px. A cor da sombra será a mesma da do texto.</div>
+        <h2>box-shadow com cor</h2>
+
+        <div id="example2">
+            <p>Esta div tem deslocamento horizontal e vertical de 5 px e 10 px, respectivamente e foi atribuida uma cor à sombra.</p>
+        </div>
+
+        <h2>box-shadow com cor e blur</h2>
+        <div id="example3">
+            <p>Esta div é similar à anterior mas foi-lhe atribuido um blur de 5px à sua sombra.</p>
+        </div>
+
+        <h2>box-shadow com cor e blur</h2>
+        <div id="example4">
+            <p>Esta div é similar à anterior e além do blur foi-lhe atribuido um valor de spread de 10px.</p>
+    </div>
+
+    
+
+</body>
+</html>

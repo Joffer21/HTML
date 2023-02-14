@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PADDING E O ELEMENTO WIDTH</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        PADDING E O ELEMENTO WIDTH
+        Ao atribuir um valor de padding a um elemento, e tendo em conta a CSS Box Model, este valor será adicionado à largura (width) do container do elemento.
+        Pode-se, por isso, ter resultados indesejáveis. Para resolver o problema, terá de se recorrer à propriedade box-sizing, que fará com que a largura do container do elemento se mantenha com o valor inicial, independentemente do valor de padding atribuído.
+        Exemplo:
+        No caso de se ter um elemento div, com 300 px de largura (width) e se atribuir a esse elemento um padding de 25 px, no final, a largura desse elemento será de 350 px (width + padding-left + padding-right = 300 + 25 + 25 = 350 px).
+        div{
+        width: 300px;
+        padding: 25px;
+        }
+
+        Para que a largura do container se mantenha em 300 px, independentemente do valor do padding, terá de se acrescentar a propriedade border-box.
+        div{
+        width: 300px;
+        padding: 25px;
+        box‐sizing: border‐box;
+}
+    -->
+    <h1>PADDING E O ELEMENTO WIDTH</h1>
+</body>
+</html>

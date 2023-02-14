@@ -1,0 +1,62 @@
+h1 {
+    text-align:center;
+    background-color: rgb(219, 44, 99);
+    color: white;
+}
+        
+#titulo_2 {
+    text-align:right;
+    color: #3950a3;
+    font-family: verdana;
+    font-size: 30px;
+}
+
+hr {
+    text-align: center;
+    width: 50%;
+   }
+   
+.paragrafo_1 {
+    direction: ltr;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+       
+#paragrafo_2 {
+    direction: rtl;
+    font-size: 4em;
+    word-spacing: 20px;
+    font-style: italic;
+}
+
+a {
+text-decoration: overline;
+}
+
+.paragrafo_3 {
+    text-indent: 50px;
+}
+   
+#frase_rasurada {
+text-decoration: line-through;
+}
+
+#frase_bold {
+    font-weight: bold;
+}
+   
+#texto_uppercase {
+background-color: yellow;
+text-transform: uppercase;
+}
+
+#texto_lowercase {
+color: #7a39a3;
+text-transform: lowercase;
+}
+
+#texto_capitalize {
+font-family: arial;
+font-size: 24px;
+text-decoration: capitalize;
+}    

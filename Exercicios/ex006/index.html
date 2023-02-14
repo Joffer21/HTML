@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Formatando Textos</title>
+
+</head>
+<body>
+    <h1>A propriedade direction</h1>
+
+    <p class="text_ltr">Este texto é escrito da esquerda para a
+    direita.</p>
+    <p class="text_rtl">Este texto é escrito da direita para a
+    esquerda.</p>
+
+    <!-- espaços entre linhas e letras -->
+
+    <h1> Espaçamento de texto </h1>
+
+    <h2> Texto com letter‐spacing e indentação </h2>
+
+    <p class="texto1">Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Duis convallis sollicitudin felis non imperdiet.  
+    Etiam suscipit rutrum facilisis. Cras justo elit, gravida et mauris
+    ut, volutpat posuere mauris.  
+    Nullam faucibus dui vel diam gravida, non imperdiet est vestibulum.
+    Orci varius natoque penatibus et magnis dis parturient montes,
+    nascetur ridiculus mus. </p>
+
+    <h2> Texto sem letter‐spacing e indentação </h2>
+
+    <p class="texto2">Vivamus consectetur eros vitae lorem pretium,
+    scelerisque gravida nisl mattis. Proin bibendum leo sit amet
+    viverra pulvinar.  
+    Aliquam vel metus quis sem efficitur auctor. Phasellus et magna sit
+    amet diam laoreet posuere eu vel dolor.</p>
+
+    <hr>
+
+    <!-- . ALINHAMENTO DE TEXTO  -->
+
+    <h1> Alinhamento de texto </h1>
+
+    <h2> Texto alinhado ao centro </h2>
+
+    <p class="texto_center">Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Duis convallis sollicitudin felis non imperdiet.</p>
+
+    <h2> Texto alinhado à direita </h2>
+
+    <p class="texto_right"> Etiam suscipit rutrum facilisis. Cras justo
+    elit, gravida et mauris ut, volutpat posuere mauris.</p>
+
+    <h2> Texto alinhado à esquerda </h2>
+
+    <p class="texto_left"> Nullam faucibus dui vel diam gravida, non
+    imperdiet est vestibulum. Orci varius natoque penatibus et magnis
+    dis parturient montes, nascetur ridiculus mus. </p>
+
+    <h2> Texto justificado </h2>
+
+    <p class="texto_justify">Vivamus consectetur eros vitae lorem
+    pretium, scelerisque gravida nisl mattis. Proin bibendum leo sit
+    amet viverra pulvinar. Aliquam vel metus quis sem efficitur auctor. Phasellus et magna sit
+    amet diam laoreet posuere eu vel dolor.</p>
+
+    <hr>
+
+    <!-- DECORAÇÃO DE TEXTO
+    O atributo text-decoration serve para formatar ou remover decorações de texto, e pode assumir os seguintes valores:
+    - none: o texto não apresenta qualquer decoração. Muitas vezes este valor é usado para retirar o sublinhado dos links.
+    - underline: texto sublinhado.
+    - overline: texto com linha superior.
+    - line-through: texto rasurado.
+    -->
+
+    <h1> Decoração de texto </h1>
+    <p class="texto_under">Este texto está sublinhado. </p>
+    <p class="texto_over"> Este texto tem uma <i>overline</i>.</p>
+    <p class="texto_link"><a href="www.google.pt" target="_blank"> Este
+    Link não está sublinhado.</p>
+
+    <hr>
+
+    <!-- TRANSFORMAÇÃO DE TEXTO
+    A propriedade text-transform permite escrever palavras com letra maiúscula ou
+    minúscula, e ainda transformar a primeira letra de cada palavra numa maiúscula
+    (capitalize). Este atributo pode assumir os seguintes valores:
+     none: não altera o texto.
+     uppercase: transforma o texto pondo-o todo em letra maiúscula.
+     lowercase: transforma o texto pondo-o todo em letra minúscula.
+     capitalize: faz com que a primeira letra de cada palavra se transforme
+    em letra maiúscula. 
+    -->
+
+    <h1> Transformação de texto </h1>
+
+    <p class="texto_upper">Este parágrafo tem a propriedade <i>upercase</i> atribuida. Todas as as palavras serão transformadas em letra
+    maiúscula.</p>
+
+    <p class="texto_lower"> Este parágrafo tem a propriedade <i>lowercase</i> atribuida. Todas as as palavras serão
+    transformadas em letra minúscula.</p>
+
+    <p class="capitalize">Este parágrafo tem a propriedade <i>capitalize</i> atribuida. Todas as primeiras letras das palavras
+    são maiúsculas.</p>
+
+    <hr>
+
+    <!-- FAMÍLIA DE FONTES – FONT-FAMILY 
+    Em CSS existem dois tipos de famílias de fontes:
+     Família genérica: grupo de família de fontes com um aspeto similar (Ex.:
+    Serif, Sans-serif, Monospace, etc.).
+     Família de fonte: família de fonte específica (Ex.: Times New Roman,
+    Arial, etc.). 
+
+    Para definir a família da fonte basta recorrer ao atributo font-family, como por
+    exemplo:
+
+    p {  
+    font‐family: "Times New Roman";
+    }
+
+    Obs.: Quando se define a font-family há que ter em conta
+    que alguns browsers podem não suportar a fonte escolhida. Por isso é conveniente escolher sempre mais
+    do que uma fonte. Assim o navegador, caso não suporte a primeira opção, tentará a seguinte e assim
+    sucessivamente.
+    -->
+
+    <hr>
+
+    <!-- ESTILO DE FONTE – FONT-STYLE 
+    O estilo de fonte, definido pela propriedade font-style, pode assumir três valores distintos:
+     normal.
+     italic.
+     oblique (similar ao itálico, mas menos suportado pelos browsers. Como tal, esta unidade não se vai focar neste valor).
+     initial: a propriedade assume o valor por defeito.
+     inherit: herda a propriedade do elemento ancestral (o elemento pai).
+    É definido da seguinte forma:
+
+    p {  
+    font‐style: normal;
+    }
+
+    Ou:
+    p {  
+    font‐style: italic;
+    }
+    -->
+
+    <hr>
+
+    <!-- ESPESSURA DE LETRA – FONT-WEIGHT
+    A propriedade font-weight especifica a espessura da fonte. Pode assumir o valor
+    normal ou bold, e a forma de definir é a seguinte:
+
+    p {
+    font‐weight: normal;
+    }
+
+    Ou:
+    P {
+    font‐weight: bold;
+    }
+    -->
+
+    <hr>
+
+    <!-- TAMANHO DE LETRA – FONT-SIZE
+    O tamanho da letra, num website, é um aspeto muito relevante para a sua leitura.
+    Há que ter o cuidado na escolha dos tamanhos de letra para não confundir o leitor.
+    
+    Obs.:Na altura de definir o tipo de texto, deve sempre usar as tags <h1> a <h6> para os títulos, e a tag <p> para
+    os parágrafos.
+
+    O tamanho de letra, em CSS, é definido através da propriedade font-size que pode assumir valores absolutos ou relativos.
+    Vejam-se as características de cada um deles:
+
+     Tamanhos absolutos:
+     O texto é definido com um tamanho específico.
+     Não permite que a letra seja ajustada aos diferentes navegadores, o que pode trazer problemas de acessibilidade. 
+    
+     Tamanhos relativos:
+     O tamanho é definido tendo em conta os elementos envolventes.
+     Adapta-se aos diferentes browsers.
+
+    Por defeito, se não especificar o tamanho de letra, um parágrafo terá 16px (1em).
+
+    As unidades de medida de tamanho de letra mais usadas são as seguintes:
+     pixels (px): estabelece o tamanho da letra de forma absoluta.
+    h1 {
+    font‐size: 40px;
+    }
+     em: permite ao utilizador ajustar o tamanho, sendo que 1 em equivale a 16 px.
+    h1 {
+    font‐size: 2.5em;
+    }
+     percentagem (%): permite ao utilizador ajustar o tamanho.
+    Esta solução combinada com a utilização da unidade de medida em é a solução ideal, uma vez que permite que o código seja interpretado perfeitamente em todos os navegadores.
+    body {
+    font‐size: 100%;
+    }
+
+    h1 {
+    font‐size: 2.5em;
+    }
+
+     vw (viewport widht): especifica o tamanho da letra em relação à viewport e é considerado o tamanho de letra responsivo. O tamanho de letra é redimensionado de acordo com a janela do navegador. 1 vw corresponde a 1% do tamanho da janela do navegador.
+    Se, por exemplo, uma janela de um navegador medir 50 cm, 1 vw será de 0,5 cm.
+    
+    h1 {
+    font‐size: 10 vw;
+    }
+
+    Para que a página web seja mais acessível recomenda-se usar em como medida.
+    Também é recomendado usar esta unidade para criar web design responsivo, ou seja, adaptável a qualquer tipo de dispositivo.
+-->
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

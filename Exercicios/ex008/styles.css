@@ -1,0 +1,30 @@
+ol {
+    background: #fcba03;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+ol li {
+    background-color: #f7dc92;
+    padding:10px;
+}
+
+ul {
+    background: #618fb8;
+    padding: 20px;
+    list-style-position: inside;
+}
+
+.square {
+    list-style-type: square;
+}
+
+ul li {
+    background-color: #afc9e0;
+    padding: 10px;
+
+}
